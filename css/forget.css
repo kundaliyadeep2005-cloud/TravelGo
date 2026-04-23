@@ -1,0 +1,167 @@
+body {
+    background: url('../images/sign-up/back.jpg') no-repeat center center;
+    background-size: cover; /* Make sure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000000; /* Dark background */
+    display: flex; /* Enable flexbox for center alignment */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Vertically center the items */
+}
+
+.navbar .navbar-brand {
+    color: white; /* White color for brand */
+    margin-right: auto; /* Ensure the brand stays at the leftmost position */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox to align the links horizontally */
+    justify-content: center; /* Center the links horizontally */
+    padding-left: 0; /* Remove default left padding */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* White text for nav links */
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f76c5e; /* Active link color */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar .btn {
+    background-color: #f76c5e; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.navbar .btn:hover {
+    background-color: #e55e4b; /* Hover color */
+}
+
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #ff5722;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #000000; /* Soft light gray background for a neutral tone */
+    color: #ffffff; /* Dark brown text for a natural feel */
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    border-top: 4px solid #a3754d; /* Soft earthy brown border */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center; /* Centers text inside elements */
+    flex-direction: column; /* Stacks content vertically */
+}
+
+/* Footer Heading Styling */
+.footer h5 {
+    font-size: 1.3rem;
+    color: #ffffff; /* Deep earthy brown for headings */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center; /* Center the heading */
+}
+
+/* Footer Paragraph Styling */
+.footer p {
+    color: #ffffff; /* Medium brown color for text */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center; /* Center the paragraph */
+}
+
+/* Footer Links Styling */
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center; /* Center the links */
+    margin: 0 auto;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff; /* Warm brown links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffffff; /* Golden color on hover */
+}
+
+/* Footer Social Media Links */
+.footer p a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.footer p a:hover {
+    color: #f0a500;
+}
+
+/* Footer Bottom Text */
+.footer .text-center p {
+    color: #ffffff; /* Dark brown text for the copyright text */
+    font-size: 1rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer .text-center p {
+        font-size: 0.9rem;
+    }
+}

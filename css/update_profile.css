@@ -1,0 +1,72 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #000000; /* Dark background */
+    display: flex; /* Enable flexbox for center alignment */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Vertically center the items */
+}
+
+.navbar .navbar-brand {
+    color: white; /* White color for brand */
+    margin-right: auto; /* Ensure the brand stays at the leftmost position */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox to align the links horizontally */
+    justify-content: center; /* Center the links horizontally */
+    padding-left: 0; /* Remove default left padding */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* White text for nav links */
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f76c5e; /* Active link color */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar .btn {
+    background-color: #f76c5e; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.navbar .btn:hover {
+    background-color: #e55e4b; /* Hover color */
+}
+
+/* Background and Transparent Form Styling */
+.tg-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.tg-profile-container {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+}

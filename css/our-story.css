@@ -1,0 +1,276 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #000000; /* Dark background */
+    display: flex; /* Enable flexbox for center alignment */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Vertically center the items */
+}
+
+.navbar .navbar-brand {
+    color: white; /* White color for brand */
+    margin-right: auto; /* Ensure the brand stays at the leftmost position */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox to align the links horizontally */
+    justify-content: center; /* Center the links horizontally */
+    padding-left: 0; /* Remove default left padding */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* White text for nav links */
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f76c5e; /* Active link color */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar .btn {
+    background-color: #f76c5e; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.navbar .btn:hover {
+    background-color: #e55e4b; /* Hover color */
+}
+
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/about-us/aboutback.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.7); /* Lighter overlay to match the original style */
+    z-index: -1;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 80px 0 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-us h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-us p.text-center {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 60px;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Info Boxes - matching home.css cards */
+.info-box {
+    background: linear-gradient(135deg, #dccab9 0%, #d899a4 100%);
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 0;
+}
+
+/* Your Next Adventure Section */
+.next-adventure {
+    padding: 50px 0 80px;
+    position: relative;
+    z-index: 1;
+    color: #000;
+    text-align: center;
+}
+
+.next-adventure h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.next-adventure p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.next-adventure .btn-success {
+    background-color: #f76c5e;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.next-adventure .btn-success:hover {
+    background-color: #e55e4b;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .about-us h2 {
+        font-size: 2.2rem;
+    }
+    .next-adventure h2 {
+        font-size: 2rem;
+    }
+    .info-box {
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 200px;
+    }
+}
+  
+  
+
+/* Footer Styling */
+.footer {
+    background-color: #000000; /* Soft light gray background for a neutral tone */
+    color: #ffffff; /* Dark brown text for a natural feel */
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    border-top: 4px solid #a3754d; /* Soft earthy brown border */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center; /* Centers text inside elements */
+    flex-direction: column; /* Stacks content vertically */
+}
+
+/* Footer Heading Styling */
+.footer h5 {
+    font-size: 1.3rem;
+    color: #ffffff; /* Deep earthy brown for headings */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center; /* Center the heading */
+}
+
+/* Footer Paragraph Styling */
+.footer p {
+    color: #ffffff; /* Medium brown color for text */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center; /* Center the paragraph */
+}
+
+/* Footer Links Styling */
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center; /* Center the links */
+    margin: 0 auto;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff; /* Warm brown links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffffff; /* Golden color on hover */
+}
+
+/* Footer Social Media Links */
+.footer p a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.footer p a:hover {
+    color: #f0a500;
+}
+
+/* Footer Bottom Text */
+.footer .text-center p {
+    color: #ffffff; /* Dark brown text for the copyright text */
+    font-size: 1rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer .text-center p {
+        font-size: 0.9rem;
+    }
+}

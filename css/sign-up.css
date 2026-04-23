@@ -1,0 +1,223 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    margin-right: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f76c5e;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar .btn {
+    background-color: #f76c5e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.navbar .btn:hover {
+    background-color: #e55e4b;
+}
+
+/* General Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering the Form */
+.tg-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 50px;
+    background: url('../images/sign-up/back.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Transparent Sign-Up Form Styling */
+.tg-signup-container {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.5); /* Transparent background with 50% opacity */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on the form */
+.tg-signup-container:hover {
+    box-shadow: 0 4px 15px rgb(124, 0, 0); /* Stronger shadow on hover */
+    transform: scale(1.05); /* Slightly scale the form up */
+}
+
+/* Form Input Styling */
+.tg-signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tg-form-group {
+    margin-bottom: 15px;
+}
+
+.tg-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.tg-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.tg-form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styling */
+.tg-btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tg-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Link Styling */
+.tg-signin-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.tg-signin-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    border-top: 4px solid #a3754d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer h5 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #f0a500;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.footer p a:hover {
+    color: #f0a500;
+}
+
+.footer .text-center p {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer .text-center p {
+        font-size: 0.9rem;
+    }
+}

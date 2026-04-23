@@ -1,0 +1,436 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #000000; /* Dark background */
+    display: flex; /* Enable flexbox for center alignment */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Vertically center the items */
+}
+
+.navbar .navbar-brand {
+    color: white; /* White color for brand */
+    margin-right: auto; /* Ensure the brand stays at the leftmost position */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox to align the links horizontally */
+    justify-content: center; /* Center the links horizontally */
+    padding-left: 0; /* Remove default left padding */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* White text for nav links */
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f76c5e; /* Active link color */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar .btn {
+    background-color: #f76c5e; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.navbar .btn:hover {
+    background-color: #e55e4b; /* Hover color */
+}
+
+
+/* Carousel Caption */
+.carousel-caption {
+    position: absolute;
+    bottom: 37px; /* Distance from the bottom */
+    left: 0;
+    width: 100%; /* Make it full-width of the carousel */
+    text-align: center; /* Center the text horizontally */
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+}
+
+/* Style for the button */
+.carousel-caption .btn {
+    background-color: #f76c5e; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.carousel-caption .btn:hover {
+    background-color: #e55e4b; /* Slightly darker color on hover */
+}
+
+/* Style for the arrows */
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none; /* Remove border */
+    width: 50px; /* Adjust button size */
+    height: 50px; /* Adjust button size */
+    border-radius: 50%; /* Circle shape */
+    opacity: 1; /* Ensure visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Absolute positioning to place the button inside the carousel */
+    top: 50%; /* Vertically center the buttons */
+    transform: translateY(-50%); /* Fine-tune vertical centering */
+}
+
+/* Left button - Previous (Arrow inside circle) */
+.carousel-control-prev {
+    left: 10px; /* Position to the left side */
+}
+
+.carousel-control-prev-icon {
+    content: '\2190'; /* Unicode Left Arrow */
+    color: white;
+    font-size: 24px; /* Adjust font size for the arrow */
+}
+
+/* Right button - Next (Arrow inside circle) */
+.carousel-control-next {
+    right: 10px; /* Position to the right side */
+}
+
+.carousel-control-next-icon {
+    content: '\2192'; /* Unicode Right Arrow */
+    color: white;
+    font-size: 24px; /* Adjust font size for the arrow */
+}
+
+/* Optional: Hover effect for buttons */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the background on hover */
+}
+
+/* Adjust carousel height to take up full screen */
+.carousel {
+    height: 100vh; /* Full screen height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Ensure the images inside the carousel fill the height properly */
+.carousel-inner {
+    height: 100%; /* Make sure the inner container takes full height */
+    width: 100%; /* Ensure the inner container is full-width */
+}
+
+.carousel-item {
+    height: 100%; /* Ensure each carousel item also takes full height */
+    width: 100%; /* Ensure carousel items take full width */
+}
+
+/* Ensure images inside the carousel fill the height and width properly */
+.carousel-item img {
+    object-fit: cover; /* Ensure the image covers the space */
+    height: 100%; /* Make images fill the height of the carousel */
+    width: 100%; /* Make images fill the width of the carousel */
+    display: block; /* Remove any unwanted gaps */
+}
+
+
+
+/* Remove any unnecessary padding/margin around the .our-story container */
+.our-story {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the H1 with an enlarged box and text */
+.best-places-heading {
+    margin: 0; /* Remove default margin */
+    padding: 20px 40px; /* Increase padding for a larger box */
+    background-color:#000000;
+    color: white;
+    border: 3px solid #000; /* Slightly thicker border */
+    text-align: left; /* Align text to the left */
+    font-size: 2.5rem; /* Increase font size for larger text */
+    display: inline-block; /* Ensure the box size wraps only the text */
+    font-weight: bold; /* Make the text bold */
+}
+
+.horizontal-card {
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure image takes up full space */
+.horizontal-card .card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+/* Card Body */
+.horizontal-card .card-body {
+    padding: 25px;
+    background: linear-gradient(135deg, #dccab9 0%, #d899a4 100%);
+    text-align: center;
+    border-top: 2px solid #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Card Title Styling */
+.horizontal-card .card-title {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Card Text Styling */
+.horizontal-card .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.horizontal-card .btn-custom {
+    background-color: #f76c5e;
+    color: white;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.horizontal-card .btn-custom:hover {
+    background-color: #e55e4b;
+}
+
+/* Hover Effect for Card */
+.horizontal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* On hover, make the content appear */
+.horizontal-card:hover .card-body {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Effect for Image */
+.horizontal-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .horizontal-card {
+        flex-direction: column;
+    }
+
+    .horizontal-card .card-img-top {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+
+/* Styling for the Our Story section */
+.our-story {
+    display: flex;
+    justify-content: center; /* Center the content horizontally and vertically */
+    width: 100%;
+    height: 100%; /* Ensure it takes full height */
+}
+
+/* Styling for the square box */
+.square-box {
+    width: 220px; /* Adjust this value to control the size of the square box */
+    height: 70px; /* Increased the height to 150px */
+    justify-content: center; /* Center the heading inside the box */
+    background-color: #000; /* Set the background color of the box */
+    border: 2px solid #000; /* Optional: Add border to the box */
+    margin-bottom: 50px;
+}
+
+/* Styling for the centered heading inside the box */
+.centered-heading {
+    margin: 0;
+    padding: 15px 30px;
+    font-size: 1.5rem; /* Adjust font size to fit inside the box */
+    font-weight: bold;
+    text-align: center;
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+
+
+/* Big Card Styles */
+.big-about-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+  }
+  
+  .big-about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Styling */
+  .big-about-card .card-img-top {
+    width: 100%;
+    height: 500px; /* Large image height for better visual impact */
+    object-fit: cover;
+  }
+  
+  /* Card Body Styling */
+  .big-about-card .card-body {
+    padding: 60px; /* Additional padding for better readability */
+    text-align: justify;
+  }
+  
+  /* Title Styling */
+  .big-about-card .card-title {
+    font-size: 36px; /* Emphasize title */
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Text Styling */
+  .big-about-card .card-text {
+    font-size: 20px; /* Enhanced text size for clarity */
+    line-height: 2; /* Better spacing between lines */
+    color: #555;
+  }
+  /* Card Styling */
+.card.big-about-card {
+    margin-top: -83px; /* Adjust this as needed */
+}
+  
+  
+
+/* Footer Styling */
+.footer {
+    background-color: #000000; /* Soft light gray background for a neutral tone */
+    color: #ffffff; /* Dark brown text for a natural feel */
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    border-top: 4px solid #a3754d; /* Soft earthy brown border */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center; /* Centers text inside elements */
+    flex-direction: column; /* Stacks content vertically */
+}
+
+/* Footer Heading Styling */
+.footer h5 {
+    font-size: 1.3rem;
+    color: #ffffff; /* Deep earthy brown for headings */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center; /* Center the heading */
+}
+
+/* Footer Paragraph Styling */
+.footer p {
+    color: #ffffff; /* Medium brown color for text */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center; /* Center the paragraph */
+}
+
+/* Footer Links Styling */
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center; /* Center the links */
+    margin: 0 auto;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff; /* Warm brown links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffffff; /* Golden color on hover */
+}
+
+/* Footer Social Media Links */
+.footer p a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.footer p a:hover {
+    color: #f0a500;
+}
+
+/* Footer Bottom Text */
+.footer .text-center p {
+    color: #ffffff; /* Dark brown text for the copyright text */
+    font-size: 1rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer .text-center p {
+        font-size: 0.9rem;
+    }
+}
