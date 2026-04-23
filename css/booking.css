@@ -1,0 +1,281 @@
+body {
+    background: url('../images/sign-up/back.jpg') no-repeat center center;
+    background-size: cover; /* Make sure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000000; /* Dark background */
+    display: flex; /* Enable flexbox for center alignment */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Vertically center the items */
+}
+
+.navbar .navbar-brand {
+    color: white; /* White color for brand */
+    margin-right: auto; /* Ensure the brand stays at the leftmost position */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox to align the links horizontally */
+    justify-content: center; /* Center the links horizontally */
+    padding-left: 0; /* Remove default left padding */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* White text for nav links */
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f76c5e; /* Active link color */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar .btn {
+    background-color: #f76c5e; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.navbar .btn:hover {
+    background-color: #e55e4b; /* Hover color */
+}
+
+
+
+
+/* Booking Container Styling */
+.booking-container {
+    margin: 5rem auto;
+}
+
+.booking-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+}
+
+.booking-header {
+    background: linear-gradient(135deg, #f76c5e, #e55e4b);
+    color: white;
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.booking-header h2 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.booking-header p {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.booking-form-content {
+    padding: 2.5rem 3rem;
+}
+
+.booking-form-content label {
+    font-weight: 600;
+    color: #444;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.booking-form-content .form-control,
+.booking-form-content .form-select {
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fbfbfb;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.booking-form-content .form-control:focus,
+.booking-form-content .form-select:focus {
+    border-color: #f76c5e;
+    box-shadow: 0 0 0 3px rgba(247, 108, 94, 0.2);
+    background-color: #fff;
+    outline: none;
+}
+
+.btn-booking {
+    background-color: #f76c5e;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.btn-booking:hover {
+    background-color: #d15043;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 108, 94, 0.4);
+}
+
+/* Form Animation */
+.animate-up {
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Remove number input spinner for Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Remove spinner in Webkit browsers (Chrome, Safari) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .booking-container {
+        margin: 2rem auto;
+    }
+    
+    .booking-form-content {
+        padding: 1.5rem;
+    }
+
+    .booking-header {
+        padding: 1.5rem 1rem;
+    }
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #000000; /* Soft light gray background for a neutral tone */
+    color: #ffffff; /* Dark brown text for a natural feel */
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    border-top: 4px solid #a3754d; /* Soft earthy brown border */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center; /* Centers text inside elements */
+    flex-direction: column; /* Stacks content vertically */
+}
+
+/* Footer Heading Styling */
+.footer h5 {
+    font-size: 1.3rem;
+    color: #ffffff; /* Deep earthy brown for headings */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center; /* Center the heading */
+}
+
+/* Footer Paragraph Styling */
+.footer p {
+    color: #ffffff; /* Medium brown color for text */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center; /* Center the paragraph */
+}
+
+/* Footer Links Styling */
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center; /* Center the links */
+    margin: 0 auto;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff; /* Warm brown links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffffff; /* Golden color on hover */
+}
+
+/* Footer Social Media Links */
+.footer p a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.footer p a:hover {
+    color: #f0a500;
+}
+
+/* Footer Bottom Text */
+.footer .text-center p {
+    color: #ffffff; /* Dark brown text for the copyright text */
+    font-size: 1rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer .text-center p {
+        font-size: 0.9rem;
+    }
+}
